@@ -30,6 +30,8 @@ public class GetURL {
   //driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
   String Text= driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
   System.out.println(Text);
+  driver.findElement(By.xpath("//input[@name='fname']")).sendKeys("kavita");
+
  }
  @After
  public void aftertest() {
