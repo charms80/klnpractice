@@ -25,6 +25,10 @@ public class GetURL {
 
  //To Open URL In browser
   driver.get("http://only-testing-blog.blogspot.in/2013/11/new-test.html");
+  //driver.getCurrentUrl();
+  //driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
+  String Text= driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
+  System.out.println(Text);
  }
  
  @After
