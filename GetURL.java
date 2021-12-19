@@ -46,8 +46,9 @@ public class GetURL {
 
   //Get current page URL
   String CurrentURL = driver.getCurrentUrl();
-  System.out.println("My Current URL Is  : "+CurrentURL);
+  System.out.println("My Current URL Is  : "+CurrentURL)
   driver.findElement(By.xpath("//input[@id='text4']")).sendKeys("i have a car");
+  driver.findElement(By.xpath("//input[@name='fname']")).sendKeys("kavita");
   driver.findElement(By.xpath("//input[@name='lname']")).sendKeys("shah");
  }
 }
