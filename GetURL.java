@@ -25,14 +25,13 @@ public class GetURL {
 
  //To Open URL In browser
   driver.get("http://only-testing-blog.blogspot.in/2013/11/new-test.html");
+  String title = driver.getTitle();
+  System.out.println("Title is " + title);
  }
- 
  @After
  public void aftertest() {
   driver.quit();
-  
  }
- 
  @Test
  public void test () 
  {  
@@ -41,8 +40,7 @@ public class GetURL {
   //Get current page title
   String pagetitle=(String)javascript.executeScript("return document.title");  
   System.out.println("My Page Title Is  : "+pagetitle);
- 
-  
+
   //Get current page URL
   String CurrentURL = driver.getCurrentUrl();
   System.out.println("My Current URL Is  : "+CurrentURL);
