@@ -25,18 +25,16 @@ public class GetURL {
 
  //To Open URL In browser
   driver.get("http://only-testing-blog.blogspot.in/2013/11/new-test.html");
+
   //driver.getCurrentUrl();
   //driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
   String Text= driver.findElement(By.xpath("//a[normalize-space()='Only Testing']")).getText();
   System.out.println(Text);
  }
- 
  @After
  public void aftertest() {
   driver.quit();
-  
  }
- 
  @Test
  public void test () 
  {  
@@ -45,8 +43,7 @@ public class GetURL {
   //Get current page title
   String pagetitle=(String)javascript.executeScript("return document.title");  
   System.out.println("My Page Title Is  : "+pagetitle);
- 
-  
+
   //Get current page URL
   String CurrentURL = driver.getCurrentUrl();
   System.out.println("My Current URL Is  : "+CurrentURL);
